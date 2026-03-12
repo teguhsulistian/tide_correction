@@ -10,5 +10,6 @@ pyproj
 numpy
 scipy
 matplotlib
+folium
 odc-stac
 pyTMD @ git+https://github.com/teguhsulistian/pyTMD.git@inatides-v2
