@@ -1,0 +1,40 @@
+[project]
+name = "tide-correction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "pandas>=2.0",
+    "rasterio>=1.4.3",
+    "eo-tides",
+    "geopandas",
+    "ipykernel",
+    "pystac-client",
+    "xarray",
+    "rioxarray",
+    "pyproj",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "folium",
+    "odc-stac",
+    "pyTMD @ git+https://github.com/teguhsulistian/pyTMD.git@inatides-v2",
+]
+
+[tool.setuptools.packages.find]
+include = ["tide*"]
+
+# setuptools build backend
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# tool.uv.dev-dependecies
+[dependency-groups]
+dev = [
+    "pytest",
+    "ipykernel",
+    "jupyter",
+]
